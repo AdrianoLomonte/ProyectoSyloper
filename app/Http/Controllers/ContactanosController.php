@@ -30,7 +30,7 @@ class ContactanosController extends Controller
 
         $correo = new ContactanosMailable($request->all());
 
-        Mail::to('magnusmefisto96@gmail.com')->send($correo);
+        Mail::to('adrianolomonte@gmail.com')->send($correo);
         return redirect()->route('contactanos.index')->with('info', 'Mensaje Enviado');
     }
 }
